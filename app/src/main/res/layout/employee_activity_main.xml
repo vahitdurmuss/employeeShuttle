@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#34495e"
+    tools:context="com.example.vahitdurmuss.employeeshuttle.Employee.EmployeeMainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2c3e50"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/employee" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/profil"
+            android:layout_marginRight="10dp"
+            android:text="kullaniciadi"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/logOutEmplyee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="ÇIKIŞ YAP"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3">
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/goShuttleList"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/emashuttle" />
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/openGpsButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+
+            <ImageView
+                android:id="@+id/seeShuttleOnMap"
+                android:width="100dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/emamap"
+                />
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/selectUpdateTime"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ematimer" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/bottomLayout"
+        android:layout_alignEnd="@+id/userName"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#2c3e50"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Mesafe"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Varış Süresi"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="#2c3e50">
+
+            <TextView
+                android:id="@+id/distance_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="M"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/arrivalTime_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="DK"
+
+                android:textSize="40dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/guncellemezamani"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/enlem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/boylam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

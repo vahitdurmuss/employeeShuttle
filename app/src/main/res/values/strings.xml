@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">employeeshuttle</string>
+
+
+    <!-- strings related to employee_activity_register-->
+    <string name="name">İsim</string>
+    <string name="username">Kullancı İsmi</string>
+    <string name="email">Email Adres</string>
+    <string name="password">Şifre</string>
+
+    <string name="register">Kayıt Ol</string>
+    <string name="login">Giriş Yap</string>
+
+
+    <!-- strings related to home_activity_main-->
+    <string name="employee">Çalışan</string>
+    <string name="shuttle">Servis</string>
+    <string name="title_activity_view_shuttle_maps">Map</string>
+
+
+</resources>

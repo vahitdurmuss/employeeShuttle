@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shuttle_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vahitdurmuss.employeeshuttle.Shuttle.ShuttleViewActivity"
+    android:background="@color/employeeshuttle_background">
+
+   <ListView
+
+       android:id="@+id/shuttleListView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </ListView>
+
+
+
+</RelativeLayout>
